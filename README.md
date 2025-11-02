@@ -1,37 +1,37 @@
-# 🏥 Hospital Management System (HMS)
+#  Hospital Management System (HMS)
 
 A simple Hospital Management System designed to manage patients, doctors, appointments, billing, and medical records.  
 This project is suitable for academic submissions, SCM experiments, and GitHub version control practice.
 
 ---
 
-## ✅ Features
+##  Features
 
-### 🔹 Patient Management
+### Patient Management
 - Add / update / view patient details  
 - Maintain medical history  
 
-### 🔹 Doctor Management
+### Doctor Management
 - Store doctor information  
 - Specializations & availability  
 
-### 🔹 Appointment Scheduling
+### Appointment Scheduling
 - Book appointments  
 - Track doctor schedules  
 - Cancel or reschedule appointments  
 
-### 🔹 Billing System
+### Billing System
 - Generate bills for consultation, tests, medicines  
 - Store payment history  
 
-### 🔹 Medical Records
+### Medical Records
 - Store diagnosis  
 - Prescriptions  
 - Reports  
 
 ---
 
-## ✅ Project Modules
+##  Project Modules
 
 1. Patient Module  
 2. Doctor Module  
@@ -41,7 +41,7 @@ This project is suitable for academic submissions, SCM experiments, and GitHub v
 
 ---
 
-## ✅ Functional Requirements
+## Functional Requirements
 
 ### FR1 — Patient Registration
 System must allow registering new patients.
@@ -60,7 +60,7 @@ Search patients, doctors, or reports.
 
 ---
 
-## ✅ Non-Functional Requirements
+## Non-Functional Requirements
 
 - **Security:** Data protection for patients  
 - **Performance:** Fast access to records  
@@ -69,7 +69,7 @@ Search patients, doctors, or reports.
 
 ---
 
-## ✅ Use Case Diagram (Description)
+## Use Case Diagram (Description)
 
 **Actors:**  
 - Admin  
@@ -103,7 +103,7 @@ Search patients, doctors, or reports.
 
 ---
 
-## ✅ Project Workflow
+## Project Workflow
 
 1. Patient arrives at hospital  
 2. Receptionist registers patient  
@@ -115,23 +115,23 @@ Search patients, doctors, or reports.
 
 ---
 
-## ✅ Technologies Used
+## Technologies Used
 
 - HTML / CSS / JS *(optional)*  
 - Python / Java *(optional)*  
 - Git & GitHub for version control  
 
-(If you want actual code in any language, tell me ✅)
+(If you want actual code in any language, tell me )
 
 ---
 
-## ✅ How to Run
+## How to Run
 Since this is a conceptual/design project, no installation is required.  
 If you choose to add code later, this section can be updated.
 
 ---
 
-## ✅ Version History
+##  Version History
 
 Use Git commits to track:
 - Version 1: Initial README  
@@ -141,7 +141,7 @@ Use Git commits to track:
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 
 The Hospital Management System simplifies hospital operations by managing patients, doctors, appointments, billing, and medical records in a faster and accurate way.
 
