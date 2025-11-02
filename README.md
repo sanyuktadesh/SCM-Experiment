@@ -1,87 +1,107 @@
-#  Hospital Management System (HMS)
 
-A simple Hospital Management System designed to manage patients, doctors, appointments, billing, and medical records.  
+
+# Virtual Interview Management System (VIMS)
+
+A simple Virtual Interview Management System designed to manage candidates, interviewers, interview scheduling, results, and feedback.
 This project is suitable for academic submissions, SCM experiments, and GitHub version control practice.
 
 ---
 
-##  Features
+## Features
 
-### Patient Management
-- Add / update / view patient details  
-- Maintain medical history  
+### Candidate Management
 
-### Doctor Management
-- Store doctor information  
-- Specializations & availability  
+* Add / update / view candidate details
+* Upload resumes and track application status
 
-### Appointment Scheduling
-- Book appointments  
-- Track doctor schedules  
-- Cancel or reschedule appointments  
+### Interviewer Management
 
-### Billing System
-- Generate bills for consultation, tests, medicines  
-- Store payment history  
+* Store interviewer information
+* Set available interview slots and specializations
 
-### Medical Records
-- Store diagnosis  
-- Prescriptions  
-- Reports  
+### Interview Scheduling
+
+* Schedule online interviews based on availability
+* Manage meeting links (Zoom / Google Meet / Teams)
+* Allow rescheduling or cancellation
+
+### Evaluation & Feedback
+
+* Record interviewer feedback and performance ratings
+* Store results (Selected / Rejected / On Hold)
+
+### Reports & Analytics
+
+* Generate reports of interviews conducted
+* Candidate performance summary
+* Interview statistics
 
 ---
 
-##  Project Modules
+## Project Modules
 
-1. Patient Module  
-2. Doctor Module  
-3. Appointment Module  
-4. Billing Module  
-5. Medical Records Module  
+1. Candidate Module
+2. Interviewer Module
+3. Interview Scheduling Module
+4. Evaluation & Feedback Module
+5. Reporting Module
 
 ---
 
 ## Functional Requirements
 
-### FR1 — Patient Registration
-System must allow registering new patients.
+### FR1 — Candidate Registration
 
-### FR2 — Doctor Registration
-Admin can add, update, or delete doctor details.
+System must allow registering new candidates and uploading resumes.
 
-### FR3 — Appointment Booking
-Show available slots & schedule appointment.
+### FR2 — Interviewer Registration
 
-### FR4 — Billing
-Automatic bill generation based on services.
+Admin can add, update, or delete interviewer details.
 
-### FR5 — Search Functionality
-Search patients, doctors, or reports.
+### FR3 — Schedule Interview
+
+Display available interviewer slots and schedule interviews.
+
+### FR4 — Conduct Interview
+
+Generate meeting link and allow secure online interaction.
+
+### FR5 — Evaluation & Feedback
+
+Interviewer can record evaluation remarks and final decision.
+
+### FR6 — Search Functionality
+
+Search candidates, interviewers, or interview records.
 
 ---
 
 ## Non-Functional Requirements
 
-- **Security:** Data protection for patients  
-- **Performance:** Fast access to records  
-- **Usability:** Simple and user-friendly UI  
-- **Reliability:** All data must be stored safely  
+* **Security:** Protect candidate and interviewer data
+* **Performance:** Fast access to interview schedules and feedback
+* **Usability:** Simple and user-friendly dashboard
+* **Reliability:** All data must be stored safely
+* **Scalability:** Should support multiple interviews at once
 
 ---
 
 ## Use Case Diagram (Description)
 
-**Actors:**  
-- Admin  
-- Receptionist  
-- Doctor  
+**Actors:**
 
-**Use Cases:**  
-- Manage Patients  
-- Manage Doctors  
-- Book Appointments  
-- Generate Bill  
-- View Medical Records  
+* Admin
+* Candidate
+* Interviewer
+
+**Use Cases:**
+
+* Manage Candidates
+* Manage Interviewers
+* Schedule Interview
+* Conduct Interview
+* Record Feedback
+* Generate Report
 
 (If you want image diagrams, tell me and I will generate them as PNG.)
 
@@ -89,61 +109,73 @@ Search patients, doctors, or reports.
 
 ## ✅ Sample Database Tables
 
-### Patient Table
-| ID | Name | Age | Disease |
-|----|------|-----|---------|
-| 101 | Ravi Kumar | 32 | Fever |
-| 102 | Priya Singh | 27 | Allergy |
+### Candidate Table
 
-### Doctor Table
-| ID | Name | Specialization |
-|----|------|----------------|
-| D01 | Dr. Mehta | Cardiology |
-| D02 | Dr. Singh | Orthopedic |
+| ID   | Name        | Email                                     | Skill  | Status   |
+| ---- | ----------- | ----------------------------------------- | ------ | -------- |
+| C101 | Riya Sharma | [riya@gmail.com](mailto:riya@gmail.com)   | Python | Pending  |
+| C102 | Arjun Mehta | [arjun@gmail.com](mailto:arjun@gmail.com) | Java   | Selected |
+
+### Interviewer Table
+
+| ID  | Name       | Specialization  | Availability |
+| --- | ---------- | --------------- | ------------ |
+| I01 | Mr. Rao    | Data Science    | 10 AM - 2 PM |
+| I02 | Ms. Kapoor | Web Development | 2 PM - 6 PM  |
+
+### Interview Table
+
+| Interview ID | Candidate ID | Interviewer ID | Date       | Status    |
+| ------------ | ------------ | -------------- | ---------- | --------- |
+| INT01        | C101         | I01            | 2025-11-05 | Completed |
+| INT02        | C102         | I02            | 2025-11-06 | Scheduled |
 
 ---
 
 ## Project Workflow
 
-1. Patient arrives at hospital  
-2. Receptionist registers patient  
-3. System checks doctor availability  
-4. Appointment scheduled  
-5. Doctor examines patient  
-6. Bill is generated  
-7. Medical record stored  
+1. Candidate registers on the portal
+2. Admin verifies and assigns interviewer
+3. System schedules virtual interview
+4. Candidate joins via meeting link
+5. Interviewer conducts session and submits feedback
+6. Result is recorded (Selected / Rejected / On Hold)
+ Report is generated for admin review
 
 ---
 
 ## Technologies Used
 
-- HTML / CSS / JS *(optional)*  
-- Python / Java *(optional)*  
-- Git & GitHub for version control  
+* HTML / CSS / JS *(optional)*
+* Python / Java *(optional)*
+* Git & GitHub for version control
 
 (If you want actual code in any language, tell me )
 
 ---
 
 ## How to Run
-Since this is a conceptual/design project, no installation is required.  
+
+Since this is a conceptual/design project, no installation is required.
 If you choose to add code later, this section can be updated.
 
 ---
 
-##  Version History
+## Version History
 
 Use Git commits to track:
-- Version 1: Initial README  
-- Version 2: Added modules  
-- Version 3: Added requirements + workflow  
-- Version 4: Added database tables  
+
+* Version 1: Initial README
+* Version 2: Added modules
+* Version 3: Added requirements + workflow
+* Version 4: Added database tables
 
 ---
 
 ## Conclusion
 
-The Hospital Management System simplifies hospital operations by managing patients, doctors, appointments, billing, and medical records in a faster and accurate way.
+The Virtual Interview Management System simplifies the online interview process by managing candidates, interviewers, schedules, and feedback in a faster and more organized way.
+
 
 ---
 
